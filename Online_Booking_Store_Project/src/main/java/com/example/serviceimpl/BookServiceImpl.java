@@ -54,9 +54,8 @@ public class BookServiceImpl implements BookService {
 
 		if (book3.isPresent()) {
 			Book existId = book3.get();
-		}
 
-		if (book3 != null && !book3.isEmpty()) {
+		if (existId != null && !existId.isEmpty()) {
 			return new ResultEntity("All Book Details Fetched ", book3);
 		} else {
 			return new ResultEntity("Book Not Found With Given Id", book3);
