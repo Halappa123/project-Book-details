@@ -30,7 +30,7 @@ public class BookController {
 	@Autowired
 	private BookService bookService;
 	
-	@SuppressWarnings({ "unchecked", "rawtypes" })
+	//@SuppressWarnings({ "unchecked", "rawtypes" })
 	@PostMapping("/saveAll")
 	@ApiResponses(value = {
 			@ApiResponse(code = 200,message = "success"),
